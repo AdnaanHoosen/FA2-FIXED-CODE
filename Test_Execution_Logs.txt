@@ -1,0 +1,27 @@
+# **TASK 3: FUNCTIONAL TEST EXECUTION LOGS**
+
+**Test Run ID:** TR-20260506-001  
+**Environment:** Windows 11 / .NET 10.0  
+**Tester:** Antigravity AI  
+
+| **Timestamp** | **Test Case ID** | **Action Performed** | **Result / Observation** | **Status** |
+| :--- | :--- | :--- | :--- | :--- |
+| 10:12:05 | **TC-01** | Input "admin", "1234" in FrmLogin | MessageBox "Login Successful!" appeared. | **Pass** |
+| 10:12:20 | **TC-04** | Input "randomUser", "1234" in FrmLogin | **UNEXPECTED:** Login successful. Security breach. | **Fail** |
+| 10:13:10 | **TC-06** | Filled enrollment form and clicked Enroll | Output displayed correct data strings. | **Pass** |
+| 10:13:45 | **TC-09** | Input "fail" into Subject 1 mark field | **CRITICAL:** Application crashed (System.FormatException). | **Fail** |
+| 10:14:15 | **TC-11** | Input 10, 10, 10 into Marks fields | Output Average: 23.33 (Math Error: missing brackets). | **Fail** |
+| 10:15:00 | **TC-14** | Selected "Marks Report" and clicked Generate | Output shows Average: 169 (Hardcoded incorrect value). | **Fail** |
+| 10:15:30 | **TC-15** | Clicked Generate Report with empty selection | System displayed "No report type selected." | **Pass** |
+
+---
+
+## **Status Summary Table**
+
+| **Feature Category** | **Total Tests** | **Pass** | **Fail** | **Blocked** | **Pass %** |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| **Student Login** | 5 | 3 | 2 | 0 | 60% |
+| **Course Enrollment** | 3 | 1 | 2 | 0 | 33% |
+| **Marks Capture** | 5 | 1 | 4 | 0 | 20% |
+| **Report Generation** | 2 | 1 | 1 | 0 | 50% |
+| **TOTAL PROJECT** | **15** | **6** | **9** | **0** | **40%** |
